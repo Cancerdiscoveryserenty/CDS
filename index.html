@@ -1,171 +1,391 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cancer Discovery Serenity | Online Support Group</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<!-- Navigation Header -->
+<header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+            <div class="w-11 h-11 bg-gradient-to-tr from-teal-600 to-teal-400 rounded-xl flex items-center justify-center text-white text-xl shadow-md shadow-teal-500/20 group-hover:scale-105 transition-transform duration-300">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <div>
+                <span class="text-xl font-bold text-slate-900 tracking-tight block leading-tight">Cancer Discovery Serenity</span>
+                <span class="text-xs text-teal-600 font-medium tracking-wider uppercase">Support & Hope Together</span>
+            </div>
+        </a>
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
-                    <i class="fa-solid font-light fa-hand-holding-heart"></i>
-                </div>
-                <span class="text-xl font-semibold text-teal-900 tracking-tight">Cancer Discovery Serenity</span>
-            </div>
-            <div class="hidden md:flex space-x-6 text-slate-600 font-medium">
-                <a href="#about" class="hover:text-teal-600 transition">About Us</a>
-                <a href="#meetings" class="hover:text-teal-600 transition">Zoom Meetings</a>
-                <a href="#support" class="hover:text-teal-600 transition">Who We Support</a>
-                <a href="#contact" class="hover:text-teal-600 transition">Contact</a>
-            </div>
-            <a href="#meetings" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-medium transition shadow-sm">
-                Join Next Meeting
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+            <a href="#about" class="hover:text-teal-600 transition-colors">About Us</a>
+            <a href="#support" class="hover:text-teal-600 transition-colors">Who We Support</a>
+            <a href="#meetings" class="hover:text-teal-600 transition-colors">Zoom Schedule</a>
+            <a href="#resources" class="hover:text-teal-600 transition-colors">Resources</a>
+            <a href="#contact" class="hover:text-teal-600 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Call To Action Button -->
+        <div class="flex items-center gap-4">
+            <a href="#meetings" class="bg-teal-600 hover:bg-teal-700 text-white font-semibold text-sm px-5 py-2.5 rounded-lg shadow-md shadow-teal-600/20 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
+                Join Next Zoom
             </a>
         </div>
-    </nav>
+    </div>
+</header>
 
-    <!-- Hero Section -->
-    <header class="bg-gradient-to-b from-teal-50 to-slate-50 py-20 px-4 text-center">
-        <div class="max-w-4xl mx-auto">
-            <span class="text-teal-600 font-semibold tracking-wide uppercase text-sm bg-teal-100 px-3 py-1 rounded-full">A Safe Online Space</span>
-            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-6 leading-tight">
-                Navigating the Cancer Journey Together
-            </h1>
-            <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-                Cancer Discovery Serenity offers online Zoom support meetings for individuals diagnosed with cancer, survivors, caregivers, and family members. You don't have to walk this path alone.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#meetings" class="bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-semibold text-lg transition shadow">
-                    View Zoom Schedule
-                </a>
-                <a href="#about" class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 px-6 py-3 rounded-lg font-semibold text-lg transition">
-                    Learn More About Us
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Zoom Meetings Schedule -->
-    <section id="meetings" class="py-16 px-4 max-w-6xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-slate-900">Online Zoom Meetings</h2>
-            <p class="text-slate-600 mt-2">Connect from the comfort and privacy of your home.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-6">
-            <!-- Weekly Support Group -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded">Weekly Group</span>
-                    <i class="fa-video text-teal-600 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-bold text-slate-900">General Patient & Survivor Support</h3>
-                <p class="text-slate-600 mt-2 text-sm">
-                    A relaxed, open discussion group for sharing experiences, coping techniques, and encouragement.
-                </p>
-                <div class="mt-4 pt-4 border-t border-slate-100 text-sm text-slate-500">
-                    <p><i class="fa-regular fa-clock mr-2 text-teal-600"></i><strong>Every Tuesday:</strong> 7:00 PM – 8:00 PM (EST)</p>
-                    <p class="mt-1"><i class="fa-solid fa-location-dot mr-2 text-teal-600"></i>Online via Zoom</p>
-                </div>
-                <button class="mt-6 w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 rounded-lg transition">
-                    Request Zoom Link
-                </button>
-            </div>
-
-            <!-- Family & Caregiver Support -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Bi-Weekly Group</span>
-                    <i class="fa-video text-teal-600 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-bold text-slate-900">Caregivers & Family Members</h3>
-                <p class="text-slate-600 mt-2 text-sm">
-                    Dedicated support for loved ones and caregivers navigating the emotional and physical impact of supporting someone through treatment.
-                </p>
-                <div class="mt-4 pt-4 border-t border-slate-100 text-sm text-slate-500">
-                    <p><i class="fa-regular fa-clock mr-2 text-teal-600"></i><strong>1st & 3rd Thursday:</strong> 6:30 PM – 7:30 PM (EST)</p>
-                    <p class="mt-1"><i class="fa-solid fa-location-dot mr-2 text-teal-600"></i>Online via Zoom</p>
-                </div>
-                <button class="mt-6 w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 rounded-lg transition">
-                    Request Zoom Link
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Who We Support -->
-    <section id="support" class="bg-white py-16 px-4 border-t border-b border-slate-200">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-slate-900">Who We Support</h2>
-                <p class="text-slate-600 mt-2">Every diagnosis touches more than just one life.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
-                        <i class="fa-solid fa-heart-pulse"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Patients & Survivors</h3>
-                    <p class="text-slate-600 text-sm">A compassionate community where you can share your story, voice concerns, and find comfort among people who understand.</p>
-                </div>
-
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
-                        <i class="fa-solid fa-hands-holding-child"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Caregivers & Spouses</h3>
-                    <p class="text-slate-600 text-sm">Providing support caregivers need to manage stress, avoid burnout, and stay resilient while supporting loved ones.</p>
-                </div>
-
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
-                        <i class="fa-solid fa-people-group"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Families & Friends</h3>
-                    <p class="text-slate-600 text-sm">Guidance and connection for family members trying to navigate diagnoses, treatment schedules, and emotional wellness.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section id="contact" class="py-16 px-4 max-w-3xl mx-auto">
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-            <h2 class="text-2xl font-bold text-slate-900 text-center mb-2">Get in Touch</h2>
-            <p class="text-slate-600 text-center mb-6 text-sm">Have questions or want to join our next Zoom call? Fill out the form below.</p>
+<!-- Hero Section -->
+<section class="relative bg-gradient-to-b from-teal-50/60 via-slate-50 to-slate-50 overflow-hidden py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
             
-            <form class="space-y-4">
-                <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-1">Your Name</label>
-                    <input type="text" class="w-full border border-slate-300 rounded-lg p-2.5 focus:ring-2 focus:ring-teal-500 focus:outline-none" placeholder="John Doe" required>
+            <!-- Hero Text -->
+            <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-100/80 text-teal-800 text-xs font-semibold tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
+                    Online Support Group
                 </div>
-                <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
-                    <input type="email" class="w-full border border-slate-300 rounded-lg p-2.5 focus:ring-2 focus:ring-teal-500 focus:outline-none" placeholder="you@example.com" required>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                    Navigating Your Cancer Journey, <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">Together.</span>
+                </h1>
+                
+                <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Safe, compassionate, and confidential online Zoom meetings for individuals facing cancer, courageous survivors, dedicated caregivers, and supportive family members.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                    <a href="#meetings" class="inline-flex justify-center items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white text-base font-semibold px-6 py-3.5 rounded-xl shadow-lg shadow-teal-600/20 hover:shadow-teal-600/30 transition-all duration-200">
+                        <i class="fa-solid fa-video text-sm"></i> View Zoom Schedule
+                    </a>
+                    <a href="#about" class="inline-flex justify-center items-center bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-base font-semibold px-6 py-3.5 rounded-xl transition-all duration-200">
+                        Learn More
+                    </a>
                 </div>
-                <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-1">How can we help you?</label>
-                    <textarea rows="4" class="w-full border border-slate-300 rounded-lg p-2.5 focus:ring-2 focus:ring-teal-500 focus:outline-none" placeholder="Let us know if you're looking for patient support, caregiver support, or general info..."></textarea>
+
+                <!-- Trust Stats -->
+                <div class="pt-8 border-t border-slate-200/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                    <div>
+                        <div class="text-2xl font-bold text-slate-900">100%</div>
+                        <div class="text-xs text-slate-500 font-medium">Free & Online</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-slate-900">Weekly</div>
+                        <div class="text-xs text-slate-500 font-medium">Zoom Sessions</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-slate-900">Safe</div>
+                        <div class="text-xs text-slate-500 font-medium">& Confidential</div>
+                    </div>
                 </div>
-                <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 rounded-lg transition shadow">
-                    Send Message
+            </div>
+
+            <!-- Hero Graphic Illustration -->
+            <div class="lg:col-span-6 relative">
+                <div class="relative mx-auto max-w-lg lg:max-w-none">
+                    <div class="absolute -top-4 -left-4 w-72 h-72 bg-teal-200/50 rounded-full blur-3xl -z-10"></div>
+                    <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-emerald-200/50 rounded-full blur-3xl -z-10"></div>
+                    
+                    <div class="bg-white p-4 rounded-3xl shadow-xl border border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800" 
+                             alt="Support Group Community" 
+                             class="rounded-2xl w-full object-cover h-[380px]">
+                        
+                        <div class="p-4 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900">Warm Community</h4>
+                                    <p class="text-xs text-slate-500">Connecting from comfort of home</p>
+                                </div>
+                            </div>
+                            <span class="bg-teal-50 text-teal-700 text-xs font-semibold px-3 py-1 rounded-full border border-teal-100">Live Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+            <h2 class="text-xs font-bold tracking-widest text-teal-600 uppercase">Welcome To Cancer Discovery Serenity</h2>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">A Compassionate Place to Share, Heal, and Connect</h3>
+            <p class="text-slate-600 text-lg leading-relaxed">
+                A cancer diagnosis impacts every dimension of life—for patients, survivors, caregivers, and family members alike. Cancer Discovery Serenity was created to ensure no one has to walk this road isolated or without a listening ear.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-teal-200 transition-all duration-300 hover:shadow-md">
+                <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">Open Dialogue</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Share your feelings, doubts, victories, and fears freely in an empathetic, judgment-free environment with people who understand.
+                </p>
+            </div>
+
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-teal-200 transition-all duration-300 hover:shadow-md">
+                <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-house-laptop"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">Comfort & Access</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Join our sessions comfortably from your home via Zoom, saving energy and allowing participation regardless of distance or condition.
+                </p>
+            </div>
+
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-teal-200 transition-all duration-300 hover:shadow-md">
+                <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-hands-holding-circle"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">Holistic Support</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    We welcome patients, loved ones, and caregivers to ensure the entire support system receives the emotional care they deserve.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Who We Support Cards Section -->
+<section id="support" class="py-20 bg-slate-50 border-t border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <h2 class="text-xs font-bold tracking-widest text-teal-600 uppercase">Who We Support</h2>
+            <h3 class="text-3xl font-bold text-slate-900">Tailored Care For Everyone Involved</h3>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=600" 
+                     alt="Patients and Survivors Support" 
+                     class="h-48 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-semibold text-teal-600 mb-2 uppercase">Direct Support</div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Patients & Survivors</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Connect with peers who know firsthand what diagnosis, treatment, recovery, and life after cancer feel like.
+                        </p>
+                    </div>
+                    <a href="#contact" class="mt-6 inline-flex items-center text-teal-600 hover:text-teal-700 font-semibold text-sm gap-2">
+                        Join This Circle <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=600" 
+                     alt="Caregivers Support" 
+                     class="h-48 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-semibold text-teal-600 mb-2 uppercase">Caregiver Care</div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Caregivers & Spouses</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Caring for someone with cancer requires immense emotional strength. We offer a space dedicated to resting and processing your journey.
+                        </p>
+                    </div>
+                    <a href="#contact" class="mt-6 inline-flex items-center text-teal-600 hover:text-teal-700 font-semibold text-sm gap-2">
+                        Join This Circle <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=600" 
+                     alt="Family and Friends Support" 
+                     class="h-48 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-semibold text-teal-600 mb-2 uppercase">Family Care</div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Family & Friends</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Learn how to best support your loved ones while keeping communication open and finding strength together.
+                        </p>
+                    </div>
+                    <a href="#contact" class="mt-6 inline-flex items-center text-teal-600 hover:text-teal-700 font-semibold text-sm gap-2">
+                        Join This Circle <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Zoom Meeting Schedule Section -->
+<section id="meetings" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <h2 class="text-xs font-bold tracking-widest text-teal-600 uppercase">Interactive Online Schedule</h2>
+            <h3 class="text-3xl font-bold text-slate-900">Upcoming Zoom Support Meetings</h3>
+            <p class="text-slate-600 text-sm">All meetings are free to attend. Request your Zoom access link below.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            
+            <!-- Meeting Option 1 -->
+            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200/80 relative flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="bg-teal-100 text-teal-800 text-xs font-bold px-3 py-1 rounded-full uppercase">Weekly Meeting</span>
+                        <i class="fa-solid fa-video text-teal-600 text-xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-2">Patients & Survivors Circle</h4>
+                    <p class="text-slate-600 text-sm mb-6">
+                        Open sharing and emotional peer support for anyone undergoing treatment or in recovery.
+                    </p>
+                    <div class="space-y-3 border-t border-slate-200/60 pt-4 text-sm text-slate-700">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-regular fa-calendar text-teal-600"></i>
+                            <span><strong>Every Tuesday</strong></span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-regular fa-clock text-teal-600"></i>
+                            <span>7:00 PM - 8:15 PM (EST)</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact" class="mt-8 block text-center bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 rounded-xl transition-all shadow-md">
+                    Request Zoom Invite
+                </a>
+            </div>
+
+            <!-- Meeting Option 2 -->
+            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200/80 relative flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase">Bi-Weekly Meeting</span>
+                        <i class="fa-solid fa-video text-emerald-600 text-xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-2">Caregiver & Family Support</h4>
+                    <p class="text-slate-600 text-sm mb-6">
+                        A dedicated space for spouses, family members, and friends helping a loved one with cancer.
+                    </p>
+                    <div class="space-y-3 border-t border-slate-200/60 pt-4 text-sm text-slate-700">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-regular fa-calendar text-emerald-600"></i>
+                            <span><strong>1st & 3rd Thursday</strong></span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-regular fa-clock text-emerald-600"></i>
+                            <span>6:30 PM - 7:30 PM (EST)</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact" class="mt-8 block text-center bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 rounded-xl transition-all shadow-md">
+                    Request Zoom Invite
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Resources Graphic Banner -->
+<section id="resources" class="py-16 bg-gradient-to-r from-teal-900 to-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+                <h3 class="text-3xl font-bold mb-4">Empowerment & Educational Resources</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                    In addition to our online meetings, we connect members with verified materials on emotional wellness, coping strategies, and support network guidance.
+                </p>
+                <div class="flex flex-wrap gap-4 text-sm">
+                    <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-sm">
+                        <i class="fa-solid fa-book-open text-teal-400"></i> Coping Guides
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-sm">
+                        <i class="fa-solid fa-headphones text-teal-400"></i> Audio Sessions
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-sm">
+                        <i class="fa-solid fa-circle-play text-teal-400"></i> Recorded Webinars
+                    </div>
+                </div>
+            </div>
+            <div class="text-center lg:text-right">
+                <a href="#contact" class="inline-block bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg transition-all">
+                    Request Resource Packet
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact & Zoom Access Request Form -->
+<section id="contact" class="py-20 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl p-8 sm:p-10 shadow-lg border border-slate-200/80">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-slate-900">Get Connected With Us</h3>
+                <p class="text-slate-600 text-sm mt-2">Fill out the form below to receive Zoom meeting links or ask any questions.</p>
+            </div>
+
+            <form class="space-y-5">
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-2">First Name</label>
+                        <input type="text" placeholder="Sarah" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-2">Last Name</label>
+                        <input type="text" placeholder="Johnson" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-2">Email Address</label>
+                    <input type="email" placeholder="sarah@example.com" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-2">I am joining as a:</label>
+                    <select class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-700">
+                        <option>Patient / Survivor</option>
+                        <option>Caregiver / Spouse</option>
+                        <option>Family Member / Friend</option>
+                        <option>Other / General Inquiry</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-2">Message or Questions (Optional)</label>
+                    <textarea rows="4" placeholder="Let us know how we can support you..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 rounded-xl shadow-md transition-all">
+                    Send Message & Get Zoom Link
                 </button>
             </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-8 px-4 text-center text-sm">
-        <p>&copy; Cancer Discovery Serenity. All rights reserved.</p>
-        <p class="mt-2 text-xs text-slate-500">Disclaimer: Our support group provides peer emotional support and is not a substitute for professional medical advice.</p>
-    </footer>
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white text-sm">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <span class="text-white font-semibold">Cancer Discovery Serenity</span>
+        </div>
 
-</body>
-</html>
+        <p class="text-xs text-slate-500 max-w-md">
+            Disclaimer: Cancer Discovery Serenity provides peer support and community connection. We do not provide professional medical advice, diagnosis, or treatment.
+        </p>
+
+        <div class="text-xs text-slate-500">
+            &copy; Cancer Discovery Serenity.
+        </div>
+    </div>
+</footer>
